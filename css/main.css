@@ -13,6 +13,10 @@ img {
 	padding: 10px;
 }
 
+#questions {
+	width: 500px;
+}
+
 .btn-block {
 	padding: 18px 28px;
 	font-size: 22px;
