@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="text-center">Pirate Bartender</h1>
+            <img src="img/jolly-roger.png">
+        </header>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <form class="row">
+            <div class="form-group center-block" id="questions">
+                <label for="pirateQ1">Do ya like yer drinks strong?</label>
+                <select class="form-control" id="pirateQ1">
+                    <option value="StrDrink1">Aye, the strongest ya got.</option>
+                    <option value="StrDrink2">Not too strong, not weak either.</option>
+                    <option value="StrDrink3">Go easy on me.</option>
+                </select>
+                <label for="pirateQ2">Do ya like it with a salty tang?</label>
+                <select class="form-control" id="pirateQ2">
+                    <option value="SltDrink1">Aye, the saltier the better.</option>
+                    <option value="SltDrink2">Add some salt, not too much.</option>
+                    <option value="SltDrink3">I'm no salty dog.</option>
+                </select>
+                <label for="pirateQ3">Are ye a lubber who likes it bitter?</label>
+                <select class="form-control" id="pirateQ3">
+                    <option value="BitDrink1">Aye, bitter is better.</option>
+                    <option value="BitDrink2">Middle of the road.</option>
+                    <option value="BitDrink3">No way!</option>
+                </select>
+                <label for="pirateQ4">Would ya like any sweetness with yer poison?</label>
+                <select class="form-control" id="pirateQ4">
+                    <option value="SwtDrink1">Aye, I got me a purdy bad sweet tooth.</option>
+                    <option value="SwtDrink2">Semi-sweet is the best fer me.</option>
+                    <option value="SwtDrink3">I'm sweet enough already.</option>
+                </select>
+                <label for="pirateQ5">Are ye one for a fruity finish?</label>
+                <select class="form-control" id="pirateQ5">
+                    <option value="FrtDrink1">Put as much as ya got in!</option>
+                    <option value="FrtDrink2">Maybe some, not too much.</option>
+                    <option value="FrtDrink3">Fruit doesn't belong in a drink!</option>
+                </select>
+            </div>
+            <div>
+                <button type="button" class="btn btn-lg btn-block center-block" data-toggle="modal" id="drinkBtn" data-target="#myModal">Yarr! Get me that drink!</button>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialogue" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">The Pirate Bartender slides your drink over and says:</h4>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Yarr let me try something else!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
