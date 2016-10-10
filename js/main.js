@@ -42,7 +42,7 @@ var myPantry = new Pantry([
 	//Fruity Ingredient
 	new Ingredient('orange juice cocktail', 'fruity', 1, 'FrtDrink1'),
 	new Ingredient('cassis liqueur cocktail', 'fruity', 2, 'FrtDrink2'),
-	new Ingredient('cocktail with a cherry on top', 'fruity', 3, 'FrtDrink3'),
+	new Ingredient('cocktail with a cherry on top', 'fruity', 3, 'FrtDrink3')
 
 ]);
 
@@ -52,25 +52,25 @@ var Preferences = function(choices){
 };
 
 var Bartender = function() {	
-};
+	this.createDrink = function(selectedValues) {
 
-Bartender.prototype.createDrink = function(selectedValues) {
+		var myDrink = '';
 
-	var myDrink = '';
+		selectedValues.forEach(function(selectedValue){
+			myPantry.ingredients.forEach(function(Ingredient){
+				if(selectedValue == Ingredient.identifier) {
+					myDrink += Ingredient.name + " ";
 
-	selectedValues.forEach(function(selectedValue){
-		myPantry.ingredients.forEach(function(Ingredient){
-			if(selectedValue == Ingredient.identifier) {
-				myDrink += Ingredient.name + " ";
-
-				return false;
-			}
+					return false;
+				}
+			});
 		});
-	});
 
-	return myDrink;
+		return myDrink;
 
+	};
 };
+
 
 
 $(document).ready(function (){
